@@ -7,6 +7,7 @@ This will speed up species tree/network estimation in ~linear proportion to the 
 # Dependencies
 
 R >= 3.2.0
+
 R packages MSCquartets, future.apply
 
 # Deets
@@ -15,6 +16,7 @@ The recently developed R package MSCquartets (Jones et al. 2020) implements seve
 
 # Additional arguments
 parallel=TRUE ; (not available in `Parallel_NANUQ()` if FALSE, it uses `sapply()` instead of `future_sapply()` which seems to actually be a little slower than the original function (not sure why)
+
 RAM_Gigs=1 ; any real number, specifying the memory limit per core in gigabytes (for large trees, a lot of memory might be required; I've found 5Gigs to work fine for <= 80-taxon trees)
 
 # References and links
