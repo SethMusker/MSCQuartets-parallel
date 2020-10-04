@@ -10,6 +10,6 @@ taxa<-as.vector(taxa$V1)
 all_nanuq<-Parallel_NANUQ(genedata="genetrees.tre",
                  taxanames = taxa,
                  outfile = "genetrees_NANUQ.nex",
-		             RAM_Gigs=5)
+		 RAM_Gigs=5)
 
 
